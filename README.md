@@ -1,5 +1,15 @@
 # HeuristicSearching
-An implementation  searching algorithms that will sort a list of locations on a map so that they form a continuous path through adjacent locations.  
+An implementation of searching algorithms that will sort a list of locations on a map so that they form a continuous path through adjacent locations.  
+
+The output would have least number of swaps that would be required to form a valid path. Otherwise it would return #f.
+
+If the algorithm is given the input: (Tennessee Iowa Kentucky North-Carolina Missouri)
+It would find the path: ((North-Carolina Tennessee Kentucky Missouri Iowa) ((1 2) (1 4) (4 5)))
+Moverover if the input is (Wildcard Oregon Arizona) then output would be ((Oregon (Wildcard California) Arizona) ((1 2)))
+
+P.S. The map of USA, having informaiton of each states with their adjacaents, is already present in the program.
+
+
 
 The program contains:
  1. A* Algorithm       (WILDCARD Entry supported)
